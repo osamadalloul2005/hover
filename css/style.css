@@ -1,0 +1,387 @@
+ *
+{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+} 
+
+body 
+{
+  font-family: sans-serif;
+	
+}
+
+.container
+{
+	max-width:1200px;
+	padding:5% 5%;
+}
+/*=========Link_1============================================================*/
+.link_1 ul
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	text-align:center;
+	list-style:none;
+}
+.link_1 ul li
+{
+	margin:0 40px;
+}
+.link_1 ul li a
+{
+	text-decoration:none;
+	text-transform:uppercase;
+	display: block;
+	position:relative;
+	padding:5px 5px;
+	transition:.5s;
+}
+
+.link_1 ul li a:hover
+{
+	color:#fff;
+}
+
+/*=========Link_1 Hover Effect After=========================================*/
+.link_1 ul li a::after
+{
+	position:absolute;
+	content:"";
+	top:0;
+	left:0;
+	width:0;
+	height:100%;
+	background:linear-gradient(45deg,#FF00BF,#8000FF);
+	transition:.5s;
+	transform:translateX(0);
+	transform:scaleY(0);
+	z-index:-1;
+}
+
+.link_1 ul li a:hover:after
+{
+	width:100%; 
+	transform:translateX(2);
+	transform:scaleY(1.5);
+}
+
+/*=========Link_2============================================================*/
+.link_2 ul
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	text-align:center;
+	list-style:none;
+}
+
+.link_2 ul li
+{
+	margin:40px 40px;
+}
+.link_2 ul li a
+{
+	text-decoration:none;
+	text-transform:uppercase;
+	position:relative;
+	display:block;
+	padding:5px 5px;
+	transition:.5s;
+}
+.link_2 ul li a:hover
+{
+	color:#fff;
+}
+
+/*=========Link_2 Hover Effect After=========================================*/
+.link_2 ul li a::after
+{
+	position:absolute;
+	content:"";
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	border-top:1px solid #333;
+	border-bottom:1px solid #333;
+	transform:scale(2);
+	opacity:0;
+	transition:.5s;
+}
+.link_2 ul li a:hover:after
+{
+	opacity:1;
+	transform:scale(1);
+}
+
+/*=========Link_2 Hover Effect Before========================================*/
+.link_2 ul li a::before
+{
+	position:absolute;
+	content:"";
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:linear-gradient(45deg,#FF4000,#FFBF00);
+	opacity:0;
+	transform:scaleY(0);
+	transition:.5s;
+	z-index:-1;
+}
+.link_2 ul li a:hover:before
+{
+	opacity:1;
+	transform:scaleY(1);
+}
+
+/*=========Link_3============================================================*/
+.link_3 ul
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	text-align:center;
+	list-style:none;
+}
+
+.link_3 ul li
+{
+	margin:10px 40px;
+}
+.link_3 ul li a
+{
+	text-decoration:none;
+	text-transform:uppercase;
+	position:relative;
+	display:block;
+	padding:5px 5px;
+	transition:.5s;
+}
+.link_3 ul li a:hover
+{
+  color:#fff;
+}
+/*=========Link_3 Hover Effect After=========================================*/
+.link_3 ul li a::after
+{
+  position:absolute;
+  content:"";
+  left:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  border:1px solid #333;
+  transform:scale(0);
+  transition:.5s;
+  opacity:0;
+  z-index:-1;
+}
+
+.link_3 ul li a:hover:after
+{
+  transform:scale(1.5);
+  background:linear-gradient(45deg,#0000FF,#00BFFF);
+  opacity:1;
+}
+
+/*=========Link_4============================================================*/
+.link_4 ul
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	text-align:center;
+	list-style:none;
+}
+
+.link_4 ul li
+{
+	margin:50px 40px;
+}
+.link_4 ul li a
+{
+	text-decoration:none;
+	text-transform:uppercase;
+	position:relative;
+	display:block;
+	padding:5px 5px;
+	transition:.5s;
+}
+.link_4 ul li a:hover
+{
+  color:#fff;
+}
+/*=========Link_4 Hover Effect After=========================================*/
+.link_4 ul li a::after
+{
+  position:absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:0;
+  height:100%;
+  transition:.5s;
+  opacity:0;
+  border-bottom:1px solid #333;
+  transform:translateX(0);
+}
+
+.link_4 ul li a:hover:after
+{
+  opacity:1;
+  transform:translateX(1);
+  width:100%;
+}
+/*=========Link_4 Hover Effect Before=========================================*/
+.link_4 ul li a::before
+{
+  position:absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:0;
+  height:100%;
+  transition:.5s;
+  opacity:0;
+  border-top:1px solid #333;
+  background:linear-gradient(45deg,#FF0000,#8000FF);
+  transform:translateY(0);
+  z-index:-1;
+}
+
+.link_4 ul li a:hover:before
+{
+  opacity:1;
+  transform:translateY(1);
+  width:100%;
+}
+/*=========Link_5============================================================*/
+.link_5 ul
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	text-align:center;
+	list-style:none;
+}
+
+.link_5 ul li
+{
+	margin:20px 40px;
+}
+.link_5 ul li a
+{
+	text-decoration:none;
+	text-transform:uppercase;
+	position:relative;
+	display:block;
+	padding:5px 5px;
+	transition:.5s;
+}
+.link_5 ul li a:hover
+{
+  color:#fff;
+}
+/*=========Link_5 Hover Effect After=========================================*/
+.link_5 ul li a::after
+{
+  position:absolute;
+  content:"";
+  left:0;
+  bottom:0;
+  width:100%;
+  height:0;
+  transition:.5s;
+  background:linear-gradient(to right ,#FF0000,#8000FF);
+  z-index:-1;
+  opacity:0;
+  transform:translateY(0);
+
+}
+.link_5 ul li a:hover:after
+{
+  opacity:1;
+  transform:translateY(1);
+  height:100%;
+}
+/*=========Link_5 Hover Effect Before=========================================*/
+.link_5 ul li a::before
+{
+  position:absolute;
+  content:"";
+  left:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  transition:.5s;
+  border-bottom:2px solid #777;
+  z-index:-1;
+  opacity:1;
+  transform:translateY(0);
+}
+/*=========Link_6============================================================*/
+.link_6 ul
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	text-align:center;
+	list-style:none;
+}
+
+.link_6 ul li
+{
+	margin:50px 40px;
+}
+.link_6 ul li a
+{
+	text-decoration:none;
+	text-transform:uppercase;
+	position:relative;
+	display:block;
+	padding:5px 5px;
+	transition:.5s;
+}
+.link_6 ul li a:hover
+{
+  color:#fff;
+}
+/*=========Link_5 Hover Effect After=========================================*/
+.link_6 ul li a::after
+{
+  position:absolute;
+  content:"";
+  top:0;
+  right:0;
+  width:0;
+  height:100%;
+  transition:.5s;
+  background:linear-gradient(45deg,#FF4000,#00FF00);
+  z-index:-1;
+  opacity:0;
+  transform:translateX(0);
+}
+.link_6 ul li a:hover:after
+{
+  opacity:1;
+  transform:translateX(1);
+  width:100%;
+}
+/*=========Link_5 Hover Effect After=========================================*/
+.link_6 ul li a::before
+{
+  position:absolute;
+  content:"";
+  top:0;
+  right:0;
+  width:100%;
+  height:100%;
+  transition:.5s;
+  border-right:2px solid #FF4000;
+  z-index:-1;
+  opacity:1;
+  transform:translateX(0);
+}
